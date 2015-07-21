@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Admin. Factura | Créditos Vacacela</title>
+    
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/misEstilos.css" rel="stylesheet">
+    <link href="css/misEstilos2.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header">
+
+        <nav id="menu-fixed2" class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h2 id="logo">Créditos Vacacela</h2>
+                    <!--<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>-->
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li  class="active"><a href="formRegistroFactura.html">Nuevo</a></li>
+                        <li><a href="formActualizarFactura.html">Actualizar</a></li>
+                        <li><a href="formVerFactura.html">Ver</a></li>
+                        <li><a href="formEliminarFactura.html">Eliminar</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+        
+    </header><!--/header-->
+    <br><br><br><br>
+    <div class="container">
+        <form id="miform" action="" class="form-horizontal">
+        <!--<form class="contact_form" action="" method="post" name="contact_form">-->         		  
+                <div class="form-group">
+                    <h2><label class="control-label col-md-3" for="name">Datos Factura</label></h2> 
+                    <!--<div class="col-md-4">
+                        <span class="required_notification">* Datos Obligatorios</span>
+                    </div>-->
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <label class="control-label col-md-9" for="name">Factura #:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" name="numerofactura" placeholder="0001234" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="name">Cliente:</label>
+                    <div class="col-md-5">
+                        <input class="form-control" type="text" name="cliente" placeholder="Jordi Marcelo Duran Pesantez" />
+                    </div>
+                    <label class="control-label col-md-2" for="name">Fecha:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" name="fecha" placeholder="18-Julio-2015" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="name">Dirección:</label>
+                    <div class="col-md-5">
+                        <input class="form-control" type="text" name="direccion" placeholder="Shumiral Barrio C. del Consuelo" />
+                    </div>
+
+                    <label class="control-label col-md-2" for="name">Contrato #:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" name="numerocontrato" placeholder="C001234" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="name">Ruc/C.C.:</label>
+                    <div class="col-md-5">
+                        <input class="form-control" type="text" name="ruccc" placeholder="0705463123" />
+                    </div>
+                    <label class="control-label col-md-2" for="name"></label>
+                    <div class="col-md-1">
+                        <button class="submit" type="submit">Quitar</button>  
+                    </div>
+                    <div class="col-md-1">
+                        <button class="submit" type="submit">Add</button>  
+                    </div>
+
+
+                    <!--<label class="control-label col-md-9" for="name"></label>
+
+                    <div class="col-md-1">
+                        <button class="submit" type="submit">Quitar</button>  
+                    </div>
+                    <div class="col-md-1">
+                        <button class="submit" type="submit">Add</button>  
+                    </div>-->
+                </div>
+            
+                <div class="container  col-md-11">
+                    <div class="table-responsive">
+                    <table id="mitabla" class="table table-bordered table-condensed">
+                        <tr><!-- warning danger active ó success ó info-->
+                            <th id="misth1">Cantidad</th>
+                            <th id="misth2">Artículo</th>
+                            <th id="misth3">Valor unitario</th>
+                            <th id="misth4">Valor total</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>TV lg 82</td>
+                            <td>500.00</td>
+                            <td>50.00</td>
+                        <tr>
+                            <td>3</td>
+                            <td>Plancha a vapor</td>
+                            <td>15.00</td>
+                            <td>45.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Cama</td>
+                            <td>210.00</td>
+                            <td>420.00</td>
+                        </tr>
+                           <tr>
+                            <td>2</td>
+                            <td>Cama</td>
+                            <td>210.00</td>
+                            <td>420.00</td>
+                        </tr>
+                           <tr>
+                            <td>2</td>
+                            <td>Cama</td>
+                            <td>210.00</td>
+                            <td>420.00</td>
+                        </tr>
+
+                    </table>     
+                    </div>
+                    
+                </div>
+            
+
+                <div class="form-group">
+                    <label class="control-label col-md-9" for="name">Subtotal:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" name="subtotal" placeholder="120.00" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-9" for="name">Descuento:</label>
+                    <div class="col-md-1">
+                        <input class="form-control" type="text" name="porcentaje" placeholder="5%" />
+                    </div>
+                    <div class="col-md-1">
+                        <input class="form-control" type="text" name="descuento" placeholder="5.10" />
+                    </div>
+                </div>
+
+                <!--<div class="form-group">
+                    <label class="control-label col-md-9" for="name">Iva 0%:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" name="ivacero" placeholder="0%" />
+                    </div>
+                </div>-->
+
+                <div class="form-group">
+                    <label class="control-label col-md-9" for="name">Iva 12%:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" name="ivadoce" placeholder="12%" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-9" for="name">Total a pagar:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" type="text" name="total" placeholder="14.90" />
+                    </div>
+                </div>
+
+
+                <!--<div class="form-group"> 
+                    <div class="form-inline">
+                        <label class="control-label col-md-4" for="name">Categoría:</label>
+                        <div class="col-md-2">
+                            <select class="form-control" id="selectbasic" name="selectbasic">
+                                <option>Cocinas</option>
+                                <option>Refrigeradores</option>
+                                <option>Televisores</option>  
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label col-md-4" for="prependedcheckbox">Estado: Activo/Inactivo:</label>
+                    <div class="control-label col-md-1"><input type="checkbox"></div>
+                </div>
+
+                <!--<label class="control-label" for="textinput">Correo:</label>
+                <input id="textinput" name="textinput" type="email" placeholder="correo" class="input-xlarge">-->
+                
+                <div class="form-group">
+                    <div class="col-md-2 col-md-offset-6">
+                        <button class="submit" type="submit">Guardar</button>        
+                    </div>
+                </div> 
+                <br>         
+        </form>
+    </div>  
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2015 <a target="_blank" href="https://www.facebook.com/jordi.duran.16" title="Free Twitter Bootstrap WordPress Themes and HTML templates">Jordi Durán Pesántez</a>.   Todos los derechos reservados...
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Arriba</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>

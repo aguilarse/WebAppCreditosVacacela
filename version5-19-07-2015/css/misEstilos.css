@@ -1,0 +1,147 @@
+body{
+	background: #ccccff;
+}
+
+#btnCerrar{
+	background: #dd0000;
+	color: white;
+}
+
+#btnCerrar:hover{
+	background: #cc0000;
+}
+
+#libtn{
+	padding: 9px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 7px;
+	margin-left: 0px;
+}
+
+#main-slider{
+	background: #eeeeee;
+}
+
+#logo{
+	color: #cccccc;
+}
+
+#logo:hover{
+	color: #ffffff;
+	font-size: 30;
+	cursor: pointer;
+}
+
+#open_close{
+	background: #3399ff;
+}
+
+header{
+	background: black;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mibaner{
+	margin: 0px;
+	padding: 0px;
+}
+
+#minavb{
+	padding: 0px;
+}
+
+.container{
+	margin-left: 5%;
+	margin-right: 5px;
+}
+
+.menu-fixed{
+
+	background: black;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 88%;
+}
+
+#menu-fixed2{
+	background: black;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+}
+
+
+#miulnav{
+	padding: 0px;
+	margin: 0px;
+}
+
+.miespan{
+	color: #cc0033;
+}
+
+.miespan2{
+	color: #999999;
+}
+
+#mibtn2:active{
+  	display: none;
+}
+
+#mibaner{
+	background: #000000;
+}
+
+#ilnav{
+	padding: 9px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 7px;
+	margin-left: 0px;
+}
+
+.social-share li a:hover{
+	background: #000099;
+}
+
+
+#div_producto{
+	margin-top: -63px;
+}
+
+
+
+
+.btn btn-primary{
+	background: yellow;
+}
+
+#miform{
+	background: #eeeeee;
+}
+
+#misth1, #misth2, #misth3, #misth4, #misth5, #misth6, #misth7, #misth8, #misth9, #misth10, #misth11{
+	background: #0099ff;
+	color: #eeeeee;
+}
+
+body div div table tr{
+	background: #ffffff;
+	color: #aaaaaa;
+}
+
+body div div table tr:hover{
+	background: #cccccc;
+	color: #ffffff;
+	
+}
+
+body div div table tr td:hover{
+	background: #99ccff;
+}
+
+
